@@ -1,5 +1,5 @@
 import { registerBlockType } from "@wordpress/blocks"
-import { registerFormatType } from '@wordpress/rich-text'
+import { registerFormatType } from "@wordpress/rich-text"
 import KojiLogoSvg from "./Icon/KojiBlackLogoSvg"
 import Save from "./Save"
 import Edit from "./Edit"
@@ -26,9 +26,9 @@ registerBlockType("koji/koji-embed-button", {
   save: Save,
 })
 
-registerFormatType('koji/koji-edit-url', {
-  title: 'Sample output',
-  tagName: 'samp',
+registerFormatType("koji/koji-edit-url", {
+  title: "Sample output",
+  tagName: "samp",
   className: null,
   edit: KojiEditLink,
 })

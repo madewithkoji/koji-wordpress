@@ -4,7 +4,12 @@ import Button, { BlackButton } from "../Components/Button"
 import TextInput from "../Components/Input/TextInput"
 import KojiLogoSvg from "../Icon/KojiBlackLogoSvg"
 import { useState } from "react"
-import { RichText } from "@wordpress/block-editor"
+import {
+  useBlockProps,
+  RichText,
+  AlignmentToolbar,
+  BlockControls,
+} from "@wordpress/block-editor"
 import AppStoreIframe from "./AppStoreIframe"
 import { isURLValid, getKojiApp } from "../Utils/validation"
 const { __ } = wp.i18n
@@ -63,9 +68,11 @@ const Edit = (props) => {
           className="koji-embed-button"
           value={attributes.button}
           onChange={(content) => setAttributes({ button: content })}
-          allowedFormats={[
-            //'koji/koji-edit-url'
-          ]}
+          allowedFormats={
+            [
+              //'koji/koji-edit-url'
+            ]
+          }
         />
       </div>
     )

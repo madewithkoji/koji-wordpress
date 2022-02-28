@@ -1,7 +1,7 @@
 import Screen from "../Components/Modals/Screen"
 import styled from "styled-components"
 import { useState } from "react"
-import CloseBlackIcon from './CloseBlackIcon'
+import CloseBlackIcon from "./CloseBlackIcon"
 import ExternalLinkIcon from "./ExternalLinkIcon"
 
 const Iframe = styled.iframe`
