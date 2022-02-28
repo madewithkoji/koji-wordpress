@@ -11,6 +11,10 @@ const Iframe = styled.iframe`
 `
 
 const CloseIconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   > svg {
     width: 23px;
     height: 23px;
@@ -18,6 +22,10 @@ const CloseIconContainer = styled.div`
 `
 
 const ActionIconContainer = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   > svg {
     width: 20px;
     height: 20px;
