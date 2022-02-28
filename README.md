@@ -1,12 +1,8 @@
-# Koji Wordpress
-
-The official Koji Block for Wordpress's Gutenberg Editor. Brings the power of Koji's App Store to Gutenberg and Wordpress.
-
-## Plugin Development
-
-### Local Wordpress
+## Local Wordpress
 
 I recommend https://localwp.com/
+
+## Plugin Development
 
 ### How to set things up
 
@@ -15,8 +11,14 @@ I recommend https://localwp.com/
 3. Install libs (npm install)
 4. Build the files (npm run build)
 
-### Useful commands:
+### Useful commands
 
-`npm run start` - for editor development <br />
+`npm run start:editor` - for editor development <br />
 `npm run start:frontend` - for frontend script development <br />
-`npm run build:all` - to build all the production scripts
+`npm run build` - to build all the production scripts
+
+### How to create a release
+
+1. update version in `./index.php`
+2. run `npm run build`
+3. zip `./index.php`, `./init.php`, `./build`, `./build-frontend`. name it accordingly and move into`./dist`
