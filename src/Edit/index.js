@@ -20,7 +20,7 @@ const { __ } = wp.i18n
 import Screen from "../Components/Modals/Screen"
 
 const Container = styled.div`
-  padding: 10px 16px;
+  padding: 10px 16px 18px;
   border: 1px solid black;
   border-radius: 2px;
 `
