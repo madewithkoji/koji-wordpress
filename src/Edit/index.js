@@ -70,7 +70,7 @@ const Edit = (props) => {
           <BlockControls>
             <BlockAlignmentToolbar
               value={attributes.alignment}
-              controls={["center", "left", "right"]}
+              controls={["center", "left", "right", "full"]}
               onChange={(newAlignment) => {
                 setAttributes({
                   alignment: newAlignment === undefined ? "none" : newAlignment,

@@ -50,3 +50,7 @@
 .koji-embed-button-right {
   margin-left: auto;
 }
+
+.koji-embed-button-full {
+  width: 100%;
+}
