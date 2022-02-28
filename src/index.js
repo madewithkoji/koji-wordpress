@@ -7,10 +7,10 @@ import Edit from "./Edit"
 import "./style.css"
 
 registerBlockType("koji/koji-embed-button", {
-  title: "Koji", // The title of block in editor.
+  title: "Koji App", // The title of block in editor.
   description: "Easily embed Koji apps",
   icon: <KojiLogoSvg />, // The icon of block in editor.
-  category: "widgets", // The category of block in editor.
+  category: "embed", // The category of block in editor.
   keywords: ["koji"],
   attributes: {
     link: {
