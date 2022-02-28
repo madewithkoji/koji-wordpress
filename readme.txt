@@ -1,4 +1,4 @@
-=== Koji Block - Gutenberg Block for Koji Apps ===
+=== Koji Block - Embed Block for Koji Apps ===
 Contributors: withkoji
 Tags: block, app block, koji, gutenberg block, gutenberg editor
 Requires at least: 5.4
