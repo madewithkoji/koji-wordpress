@@ -13,9 +13,9 @@ I recommend https://localwp.com/
 
 ### Useful commands
 
-`npm run start` - for editor development <br />
+`npm run start:editor` - for editor development <br />
 `npm run start:frontend` - for frontend script development <br />
-`npm run build:all` - to build all the production scripts
+`npm run build` - to build all the production scripts
 
 ### How to create a release
 
