@@ -1,6 +1,7 @@
 import Screen from "../Components/Modals/Screen"
 import styled from "styled-components"
 import { useState } from "react"
+import CloseBlackIcon from './CloseBlackIcon'
 
 const Iframe = styled.iframe`
   width: 100%;
@@ -27,6 +28,9 @@ const KojiAppModal = ({ url, onClose }) => {
       dismissOnBackgroundClick={true}
       transition={"wordpress-plugin-custom"}
       preventScroll
+      navigationLeftContent={
+        <CloseBlackIcon />
+      }
     >
       <Iframe
         src={`${url}?__presentation-style=embed`}
