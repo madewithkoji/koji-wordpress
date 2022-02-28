@@ -192,6 +192,7 @@ const Edit = (props) => {
             onCancel={() => setShowChooseApp(false)}
             onAppCreated={(url) => {
               setShowChooseApp(false)
+              setLink(url)
               setAttributes({ link: url })
             }}
           />
