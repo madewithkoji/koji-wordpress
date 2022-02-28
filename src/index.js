@@ -25,6 +25,10 @@ registerBlockType("koji/koji-embed-button", {
       type: "string",
       default: "center",
     },
+    color: {
+      type: "string",
+      default: "#111",
+    },
   },
   edit: Edit,
   save: Save,

@@ -9,6 +9,7 @@ import {
   RichText,
   BlockAlignmentToolbar,
   BlockControls,
+  ColorPalette,
 } from "@wordpress/block-editor"
 import { Toolbar, Button as WordpressButton } from "@wordpress/components"
 import AppStoreIframe from "./AppStoreIframe"
@@ -76,6 +77,18 @@ const Edit = (props) => {
                   alignment: newAlignment === undefined ? "none" : newAlignment,
                 })
               }}
+            />
+
+            <ColorPalette
+              className={"koji-embed-button-color-palette"}
+              colors={[]}
+              value={attributes.color}
+              clearable={false}
+              onChange={(color) =>
+                setAttributes({
+                  color: color === undefined ? "#111" : color,
+                })
+              }
             />
 
             <Toolbar>

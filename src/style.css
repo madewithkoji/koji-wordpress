@@ -54,3 +54,9 @@
 .koji-embed-button-full {
   width: 100%;
 }
+
+/* Editor Color Palette CSS Fix */
+
+.koji-embed-button-color-palette .components-circular-option-picker {
+  margin-top: unset !important;
+}
