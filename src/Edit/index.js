@@ -107,6 +107,7 @@ const Edit = (props) => {
             "koji-embed-button",
             `koji-embed-button-${attributes.alignment}`
           )}
+          style={{ background: attributes.color }}
           value={attributes.button}
           onChange={(content) => setAttributes({ button: content })}
           allowedBlockTypes={true}
