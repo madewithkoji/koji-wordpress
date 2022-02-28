@@ -10,6 +10,7 @@ import {
   BlockAlignmentToolbar,
   BlockControls,
 } from "@wordpress/block-editor"
+import { Toolbar, Button as WordpressButton } from "@wordpress/components"
 import AppStoreIframe from "./AppStoreIframe"
 import { isURLValid, getKojiApp } from "../Utils/validation"
 const { __ } = wp.i18n
@@ -54,9 +55,8 @@ const Edit = (props) => {
   const [link, setLink] = useState("")
   const [linkError, setLinkError] = useState("")
 
-  const [step, setStep] = useState(
+  const step =
     attributes.link === "" ? STEP_SPECIFY_LINK : STEP_CUSTOMIZE_BUTTON
-  )
 
   const [showChooseApp, setShowChooseApp] = useState(false)
 
@@ -73,6 +73,14 @@ const Edit = (props) => {
                 })
               }}
             />
+
+            <Toolbar>
+              <WordpressButton
+                label="Edit URL"
+                icon="edit"
+                onClick={() => setAttributes({ link: "" })}
+              />
+            </Toolbar>
           </BlockControls>
         }
 
@@ -141,7 +149,6 @@ const Edit = (props) => {
           }
 
           setAttributes({ link: link })
-          setStep(STEP_CUSTOMIZE_BUTTON)
         }}
       >
         Continue
@@ -165,7 +172,6 @@ const Edit = (props) => {
             onAppCreated={(url) => {
               setShowChooseApp(false)
               setAttributes({ link: url })
-              setStep(STEP_CUSTOMIZE_BUTTON)
             }}
           />
         </Screen>
