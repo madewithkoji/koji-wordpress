@@ -143,11 +143,11 @@ const Edit = (props) => {
       <Button
         onClick={() => {
           if (isURLValid(link) === false) {
-            return setLinkError("URL invalid")
+            return setLinkError(__("URL Invalid"))
           }
 
           if (getKojiApp(link) === false) {
-            return setLinkError("Koji URL invalid")
+            return setLinkError(__("Koji URL invalid"))
           }
 
           setAttributes({ link: link })
