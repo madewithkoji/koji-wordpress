@@ -119,7 +119,7 @@ const Edit = (props) => {
       <Margin />
 
       <HorizontalLine>
-        <HorizontalLineLabel as={"span"}>OR</HorizontalLineLabel>
+        <HorizontalLineLabel as={"span"}>{__("OR")}</HorizontalLineLabel>
       </HorizontalLine>
 
       <Margin mb="20px" />
