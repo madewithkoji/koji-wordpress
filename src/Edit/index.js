@@ -63,7 +63,9 @@ const Edit = (props) => {
           className="koji-embed-button"
           value={attributes.button}
           onChange={(content) => setAttributes({ button: content })}
-          allowedFormats={[]}
+          allowedFormats={[
+            //'koji/koji-edit-url'
+          ]}
         />
       </div>
     )
