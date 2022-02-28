@@ -11,9 +11,14 @@ I recommend https://localwp.com/
 3. Install libs (npm install)
 4. Build the files (npm run build)
 
-### Useful commands:
+### Useful commands
 
 `npm run start` - for editor development <br />
 `npm run start:frontend` - for frontend script development <br />
 `npm run build:all` - to build all the production scripts
 
+### How to create a release
+
+1. update version in `./index.php`
+2. run `npm run build`
+3. zip `./index.php`, `./init.php`, `./build`, `./build-frontend`. name it accordingly and move into`./dist`
