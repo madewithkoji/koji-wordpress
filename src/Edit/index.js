@@ -52,7 +52,7 @@ const STEP_CUSTOMIZE_BUTTON = "button"
 const Edit = (props) => {
   const { className, setAttributes, attributes } = props
 
-  const [link, setLink] = useState("")
+  const [link, setLink] = useState(attributes.link)
   const [linkError, setLinkError] = useState("")
 
   const step =
