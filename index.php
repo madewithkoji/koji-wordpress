@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name:       Koji Embed Button
+ * Plugin Name:       Koji Block - Gutenberg Block for Koji Apps
  * Plugin URI:        https://withkoji.com/
- * Description:       Add a button that opens Koji apps from Wordpress posts.
+ * Description:       Easily embed Koji Apps in Wordpress posts. Supercharge your posts with e-commerce apps, games, and other types of powerful interactive posts.
  * Version:           1.0.0
  */
 
