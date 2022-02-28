@@ -2,11 +2,26 @@ import Screen from "../Components/Modals/Screen"
 import styled from "styled-components"
 import { useState } from "react"
 import CloseBlackIcon from './CloseBlackIcon'
+import ExternalLinkIcon from "./ExternalLinkIcon"
 
 const Iframe = styled.iframe`
   width: 100%;
   height: 100%;
   background: black;
+`
+
+const CloseIconContainer = styled.div`
+  > svg {
+    width: 23px;
+    height: 23px;
+  }
+`
+
+const ActionIconContainer = styled.a`
+  > svg {
+    width: 20px;
+    height: 20px;
+  }
 `
 
 const KojiAppModal = ({ url, onClose }) => {
@@ -29,7 +44,14 @@ const KojiAppModal = ({ url, onClose }) => {
       transition={"wordpress-plugin-custom"}
       preventScroll
       navigationLeftContent={
-        <CloseBlackIcon />
+        <CloseIconContainer>
+          <CloseBlackIcon />
+        </CloseIconContainer>
+      }
+      actionItem={
+        <ActionIconContainer href={url} target="_blank">
+          <ExternalLinkIcon />
+        </ActionIconContainer>
       }
     >
       <Iframe
