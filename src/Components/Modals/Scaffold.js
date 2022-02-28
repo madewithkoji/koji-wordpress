@@ -232,6 +232,7 @@ const Modal = (props) => {
   if (transition === "wordpress-plugin-custom") {
     animationInitial = { scale: 0 }
     duration = 0.3
+    animationActive = { scale: 1, opacity: 1 }
   }
 
   if (noAnimation) {
