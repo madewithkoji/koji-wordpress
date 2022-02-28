@@ -1,9 +1,9 @@
 import { registerBlockType } from "@wordpress/blocks"
-import { registerFormatType } from "@wordpress/rich-text"
+//import { registerFormatType } from "@wordpress/rich-text"
 import KojiLogoSvg from "./Icon/KojiBlackLogoSvg"
 import Save from "./Save"
 import Edit from "./Edit"
-import KojiEditLink from "./Formatters/KojiEditLink"
+//import KojiEditLink from "./Formatters/KojiEditLink"
 import "./style.css"
 
 registerBlockType("koji/koji-embed-button", {
@@ -21,14 +21,18 @@ registerBlockType("koji/koji-embed-button", {
       type: "string",
       default: "My Koji App",
     },
+    alignment: {
+      type: "string",
+      default: "none",
+    },
   },
   edit: Edit,
   save: Save,
 })
 
-registerFormatType("koji/koji-edit-url", {
+/*registerFormatType("koji/koji-edit-url", {
   title: "Sample output",
   tagName: "samp",
   className: null,
   edit: KojiEditLink,
-})
+})*/

@@ -7,7 +7,7 @@ import { useState } from "react"
 import {
   useBlockProps,
   RichText,
-  AlignmentToolbar,
+  BlockAlignmentToolbar,
   BlockControls,
 } from "@wordpress/block-editor"
 import AppStoreIframe from "./AppStoreIframe"
@@ -62,12 +62,26 @@ const Edit = (props) => {
 
   if (step === STEP_CUSTOMIZE_BUTTON) {
     return (
-      <div className={className}>
+      <div {...useBlockProps()} className={className}>
+        {
+          <BlockControls>
+            <BlockAlignmentToolbar
+              value={attributes.alignment}
+              onChange={(newAlignment) => {
+                setAttributes({
+                  alignment: newAlignment === undefined ? "none" : newAlignment,
+                })
+              }}
+            />
+          </BlockControls>
+        }
+
         <RichText
           tagName="div"
           className="koji-embed-button"
           value={attributes.button}
           onChange={(content) => setAttributes({ button: content })}
+          allowedBlockTypes={true}
           allowedFormats={
             [
               //'koji/koji-edit-url'
