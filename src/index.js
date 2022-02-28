@@ -23,7 +23,7 @@ registerBlockType("koji/koji-embed-button", {
     },
     alignment: {
       type: "string",
-      default: "none",
+      default: "center",
     },
   },
   edit: Edit,

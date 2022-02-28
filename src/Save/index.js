@@ -1,5 +1,7 @@
+import classnames from "classnames"
+
 const Save = ({ className, attributes }) => {
-  const { link, button } = attributes
+  const { link, button, alignment } = attributes
 
   if (!link) {
     return null // if link not provided
@@ -9,7 +11,13 @@ const Save = ({ className, attributes }) => {
 
   return (
     <div className={className}>
-      <div className="koji-embed-button" data-koji={link}>
+      <div
+        className={classnames(
+          "koji-embed-button",
+          `koji-embed-button-${attributes.alignment}`
+        )}
+        data-koji={link}
+      >
         {button}
       </div>
     </div>

@@ -2,7 +2,6 @@
   background: #111;
   border: 0px;
   border-radius: 5px;
-  padding: 12px 35px;
   color: #fff;
   font-family: sans-serif;
 
@@ -20,13 +19,14 @@
   letter-spacing: -0.14px;
   justify-content: center;
   outline: none;
-  padding: 20px 0;
+  padding: 20px 35px;
   position: relative;
   user-select: none;
   text-align: center;
   transition: 0.2s ease transform, 0.2s ease background;
-  width: 100%;
   -webkit-tap-highlight-color: transparent;
+
+  width: fit-content;
 }
 
 .koji-embed-button:active {
@@ -36,4 +36,17 @@
 .koji-embed-button:disabled {
   cursor: not-allowed;
   opacity: 30%;
+}
+
+.koji-embed-button-none,
+.koji-embed-button-left {
+  margin-left: 0;
+}
+
+.koji-embed-button-center {
+  margin: 0 auto;
+}
+
+.koji-embed-button-right {
+  margin-left: auto;
 }

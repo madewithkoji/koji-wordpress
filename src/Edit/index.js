@@ -13,6 +13,7 @@ import {
 import { Toolbar, Button as WordpressButton } from "@wordpress/components"
 import AppStoreIframe from "./AppStoreIframe"
 import { isURLValid, getKojiApp } from "../Utils/validation"
+import classnames from "classnames"
 const { __ } = wp.i18n
 
 import Screen from "../Components/Modals/Screen"
@@ -69,6 +70,7 @@ const Edit = (props) => {
           <BlockControls>
             <BlockAlignmentToolbar
               value={attributes.alignment}
+              controls={["center", "left", "right"]}
               onChange={(newAlignment) => {
                 setAttributes({
                   alignment: newAlignment === undefined ? "none" : newAlignment,
@@ -88,7 +90,10 @@ const Edit = (props) => {
 
         <RichText
           tagName="div"
-          className="koji-embed-button"
+          className={classnames(
+            "koji-embed-button",
+            `koji-embed-button-${attributes.alignment}`
+          )}
           value={attributes.button}
           onChange={(content) => setAttributes({ button: content })}
           allowedBlockTypes={true}
