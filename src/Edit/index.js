@@ -60,9 +60,11 @@ const Edit = (props) => {
 
   const [showChooseApp, setShowChooseApp] = useState(false)
 
+  const buttonProps = useBlockProps()
+
   if (step === STEP_CUSTOMIZE_BUTTON) {
     return (
-      <div {...useBlockProps()} className={className}>
+      <div {...buttonProps} className={className}>
         {
           <BlockControls>
             <BlockAlignmentToolbar
