@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import Button, { BlackButton } from "../Components/Button"
 import TextInput from "../Components/Input/TextInput"
 import KojiLogoSvg from "../Icon/KojiBlackLogoSvg"
