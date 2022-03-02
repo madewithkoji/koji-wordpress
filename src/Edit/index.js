@@ -121,7 +121,6 @@ const Edit = (props) => {
       </div>
 
       <TextInput
-        isRounded
         value={link}
         onChange={(e) => {
           setLink(e.target.value)
