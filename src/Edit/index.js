@@ -19,30 +19,6 @@ const { __ } = wp.i18n
 
 import Screen from "../Components/Modals/Screen"
 
-const Container = styled.div`
-  padding: 10px 16px 18px;
-  border: 1px solid black;
-  border-radius: 2px;
-`
-
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-
-  > svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-  }
-`
-
-const HorizontalLine = styled.div`
-  width: 100%;
-  height: 15px;
-  border-bottom: 1px solid #bebebe;
-  text-align: center;
-`
-
 const HorizontalLineLabel = styled(Header6)`
   background-color: white;
   padding: 0 10px;
@@ -123,11 +99,11 @@ const Edit = (props) => {
 
   // SPECIFY LINK STEP
   return (
-    <Container className={className}>
-      <Header>
+    <div className={classnames(className, "koji-editor__container")}>
+      <div className={"koji-editor__header"}>
         <KojiLogoSvg />
         <Header4>{__("Add a Koji app")}</Header4>
-      </Header>
+      </div>
 
       <Margin mb="20px" />
 
@@ -137,9 +113,9 @@ const Edit = (props) => {
 
       <Margin />
 
-      <HorizontalLine>
+      <div className="koji-editor__horizontal-line">
         <HorizontalLineLabel as={"span"}>{__("OR")}</HorizontalLineLabel>
-      </HorizontalLine>
+      </div>
 
       <Margin mb="20px" />
 
@@ -198,7 +174,7 @@ const Edit = (props) => {
           />
         </Screen>
       )}
-    </Container>
+    </div>
   )
 }
 

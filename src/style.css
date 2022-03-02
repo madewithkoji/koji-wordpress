@@ -60,3 +60,31 @@
 .koji-embed-button-color-palette .components-circular-option-picker {
   margin-top: unset !important;
 }
+
+/* Editor */
+
+.koji-editor__container {
+  padding: 10px 16px 18px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.koji-editor__header {
+  display: flex;
+  align-items: center;
+}
+
+.koji-editor__header > svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.koji-editor__horizontal-line {
+  width: 100%;
+  height: 15px;
+  border-bottom: 1px solid #bebebe;
+  text-align: center;
+}
+
+/* Typography */
