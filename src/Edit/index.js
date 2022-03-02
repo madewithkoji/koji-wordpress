@@ -1,4 +1,3 @@
-import Button, { BlackButton } from "../Components/Button"
 import TextInput from "../Components/Input/TextInput"
 import KojiLogoSvg from "../Icon/KojiBlackLogoSvg"
 import { useState } from "react"
@@ -100,9 +99,12 @@ const Edit = (props) => {
 
       <div style={{ marginBottom: "20px" }} />
 
-      <BlackButton onClick={() => setShowChooseApp(true)}>
+      <button
+        className="koji-button koji-black-button"
+        onClick={() => setShowChooseApp(true)}
+      >
         {__("Get from App Store")}
-      </BlackButton>
+      </button>
 
       <div style={{ marginBottom: "10px" }} />
 
@@ -132,7 +134,8 @@ const Edit = (props) => {
 
       <div style={{ marginBottom: "20px" }} />
 
-      <Button
+      <button
+        className="koji-button"
         onClick={() => {
           if (isURLValid(link) === false) {
             return setLinkError(__("URL Invalid"))
@@ -146,7 +149,7 @@ const Edit = (props) => {
         }}
       >
         Continue
-      </Button>
+      </button>
 
       {showChooseApp && (
         <Screen
