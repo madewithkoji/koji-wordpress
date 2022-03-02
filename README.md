@@ -21,4 +21,4 @@ I recommend https://localwp.com/
 
 1. update version in `./index.php`
 2. run `npm run build`
-3. zip `./index.php`, `./init.php`, `./build`, `./build-frontend`. name it accordingly and move into`./dist`
+3. zip the whole project
