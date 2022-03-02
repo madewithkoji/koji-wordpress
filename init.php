@@ -1,6 +1,6 @@
 <?php
 
-function register_guttenberg_blocks() {
+function withkoji_register_guttenberg_blocks() {
 
     // Check if Gutenberg is active.
     if ( ! function_exists( 'register_block_type' ) ) {
@@ -31,7 +31,7 @@ function register_guttenberg_blocks() {
     ] );
 }
 
-function register_front_end_script() {
+function withkoji_register_front_end_script() {
     $asset_file = include( plugin_dir_path( __FILE__ ) . 'build-frontend/index.asset.php');
 
     wp_enqueue_script(
@@ -43,5 +43,5 @@ function register_front_end_script() {
     );
 }
 
-add_action( 'init', 'register_guttenberg_blocks' );
-add_action( 'wp_enqueue_scripts', 'register_front_end_script' ); // loads only on frontend
+add_action( 'init', 'withkoji_register_guttenberg_blocks' );
+add_action( 'wp_enqueue_scripts', 'withkoji_register_front_end_script' ); // loads only on frontend
