@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Header4, Body2, Margin, Header6 } from "../Components/Typography"
 import Button, { BlackButton } from "../Components/Button"
 import TextInput from "../Components/Input/TextInput"
 import KojiLogoSvg from "../Icon/KojiBlackLogoSvg"
@@ -18,11 +17,6 @@ import classnames from "classnames"
 const { __ } = wp.i18n
 
 import Screen from "../Components/Modals/Screen"
-
-const HorizontalLineLabel = styled(Header6)`
-  background-color: white;
-  padding: 0 10px;
-`
 
 const STEP_SPECIFY_LINK = "link"
 const STEP_CUSTOMIZE_BUTTON = "button"
@@ -102,24 +96,28 @@ const Edit = (props) => {
     <div className={classnames(className, "koji-editor__container")}>
       <div className={"koji-editor__header"}>
         <KojiLogoSvg />
-        <Header4>{__("Add a Koji app")}</Header4>
+        <div className="koji-typography__header4">{__("Add a Koji app")}</div>
       </div>
 
-      <Margin mb="20px" />
+      <div style={{ marginBottom: "20px" }} />
 
       <BlackButton onClick={() => setShowChooseApp(true)}>
         {__("Get from App Store")}
       </BlackButton>
 
-      <Margin />
+      <div style={{ marginBottom: "10px" }} />
 
       <div className="koji-editor__horizontal-line">
-        <HorizontalLineLabel as={"span"}>{__("OR")}</HorizontalLineLabel>
+        <span className="koji-typography__header6 koji-editor__horizontal-line-label">
+          {__("OR")}
+        </span>
       </div>
 
-      <Margin mb="20px" />
+      <div style={{ marginBottom: "20px" }} />
 
-      <Body2 mb="5px">{__("Add a link to a Koji app")}</Body2>
+      <div className={"koji-typography__body2"} style={{ marginBottom: "5px" }}>
+        {__("Add a link to a Koji app")}
+      </div>
 
       <TextInput
         isRounded
@@ -133,7 +131,7 @@ const Edit = (props) => {
         errorLabel={linkError}
       />
 
-      <Margin mb="20px" />
+      <div style={{ marginBottom: "20px" }} />
 
       <Button
         onClick={() => {

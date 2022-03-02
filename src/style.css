@@ -87,4 +87,36 @@
   text-align: center;
 }
 
+.koji-editor__horizontal-line-label {
+  background-color: white;
+  padding: 0 10px;
+}
+
 /* Typography */
+
+.koji-typography__header4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.35px;
+  color: #111;
+}
+
+.koji-typography__body2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: -0.32px;
+  color: #111;
+}
+
+.koji-typography__header6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #111;
+}
