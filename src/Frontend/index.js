@@ -29,11 +29,15 @@ const loadKojiLinks = () => {
     const href = item.getAttribute("href")
 
     if (isURLValid(href) === false) {
-      return // skip
+      return // skip not a valid link
     }
 
     if (getKojiApp(href) === false) {
-      return // skip not Koji App link
+      return // skip not a Koji App link
+    }
+
+    if (item.classList.contains("koji-disable-link")) {
+      return // skip behavior
     }
 
     item.addEventListener("click", (e) => {
