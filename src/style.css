@@ -125,10 +125,10 @@
 
 .koji-button {
   align-items: center;
-  background: #007aff;
+  background: #007aff !important;
   border-radius: 10px;
   border: none;
-  color: #ffffff;
+  color: #ffffff !important;
   cursor: pointer;
   display: flex;
   font-style: normal;
@@ -158,8 +158,8 @@
 }
 
 .koji-black-button {
-  color: white;
-  background: #111111;
+  color: white !important;
+  background: #111111 !important;
 }
 
 /* Koji Input */
