@@ -67,6 +67,7 @@
   padding: 10px 16px 18px;
   border: 1px solid black;
   border-radius: 2px;
+  background: white !important;
 }
 
 .koji-editor__header {
