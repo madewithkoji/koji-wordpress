@@ -51,5 +51,8 @@ Koji apps are free to create and to use. If you use apps with ecommerce capabili
 
 == Changelog ==
 
+= 1.0.1 - 2022-03-11 =
+- Fixed: Minor CSS issues when editing posts and pages
+
 = 1.0 - 2022-02-28 =
 - initial release
