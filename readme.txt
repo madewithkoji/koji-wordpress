@@ -42,11 +42,12 @@ No, Koji apps are "web apps," meaning they run instantly inside every browser.
 
 Koji apps are free to create and to use. If you use apps with ecommerce capabilities, there is a fee for each transaction. You can find the fee percentage on the app page when creating the app.
 
-<!-- == Screenshots ==
+== Screenshots ==
 
-1. Google Map
-2. OpenStreet Map
-3. Custom Map Marker With Popup -->
+1. Koji Block
+2. Adding an App
+3. The Koji App Store
+4. Viewing an App 
 
 == Changelog ==
 
